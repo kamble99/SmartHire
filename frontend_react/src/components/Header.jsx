@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "./Button";
+
 
 const Header = () => {
   return (
@@ -13,12 +15,8 @@ const Header = () => {
 
         {/* Right side - Register & Login */}
         <div className="d-flex ms-auto">
-          <a to="/register" className="btn btn-outline-primary me-2">
-            Register
-          </a>
-          <a to="/login" className="btn btn-primary">
-            Login
-          </a>
+          <Button text='Login' class=' btn-outline-primary me-2 '/>
+          <Button text='Register' class="btn-primary "/>
         </div>
       </div>
     </nav>
