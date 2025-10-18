@@ -1,8 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./Header";
 
 const Main = () => {
   return (
+
+  
+
     <main className="flex-grow-1">
       {/* About SmartHire Section */}
       <section className="py-5 bg-light">
@@ -73,6 +77,8 @@ const Main = () => {
         </div>
       </section>
     </main>
+
+    
   );
 };
 
