@@ -5,11 +5,15 @@ import Footer from './components/Footer'
 import Main from './components/Main'
 import Register from './components/Register'
 import Login from './components/Login'
+import JobList from './components/Joblist'
+
+import ResumeATS from './components/ResumeATS'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 
+
 function App() {
-  
+
 
   return (
     <>
@@ -19,6 +23,10 @@ function App() {
       <Route  path='/' element={<Main/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
+       <Route path="/jobs" element={<JobList />} />
+       
+       <Route path="/resume-ats" element={<ResumeATS />} />
+
      </Routes>
      <Footer/>
     </BrowserRouter>
